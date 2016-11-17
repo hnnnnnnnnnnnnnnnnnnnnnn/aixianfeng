@@ -1,0 +1,194 @@
+.shopcar_heander {
+  position: fixed;
+  top: 0;
+  height: 4.4rem;
+  width: 100%;
+  background: #F9FAFD;
+  font-size: 1.6rem;
+  line-height: 4.4rem;
+  text-align: center;
+  font-weight: 800;
+  border-bottom: 1px solid #e0e0e0;
+}
+.shopcar_main {
+  background: #e0e0e0;
+  margin-bottom: 7rem;
+}
+.shopcar_main .location {
+  height: 4.4rem;
+  margin-top: 4.5rem;
+  line-height: 4.4rem;
+  color: #e64f1a;
+  font-size: 1.4rem;
+  text-align: center;
+  background: #fff;
+}
+.shopcar_main .shopmsg .tip {
+  padding-left: 1.5rem;
+  background: #fff;
+  border-top: 1px solid #fff;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.shopcar_main .shopmsg .tip .short {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  margin-top: 1rem;
+}
+.shopcar_main .shopmsg .tip .short em {
+  display: inline-block;
+  background: #ffd600;
+  height: 1.4rem;
+  width: .4rem;
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+.shopcar_main .shopmsg .tip .tipin {
+  margin-top: 1.5rem;
+  color: #999;
+  font-size: 1rem;
+}
+.shopcar_main .shopmsg .time {
+  border: none;
+  margin-top: .1rem;
+  background: #fff;
+  padding: 2.5rem 1.5rem;
+  position: relative;
+  outline: none;
+}
+.shopcar_main .shopmsg .time select {
+  border: none;
+  background: #fff;
+  color: red;
+}
+.shopcar_main .shopmsg .time > .left {
+  float: left;
+}
+.shopcar_main .shopmsg .time > .right {
+  float: right;
+}
+.shopcar_main .shopmsg .time .middle {
+  height: 3rem;
+  position: absolute;
+  top: 1.4rem;
+  left: 30%;
+  outline: none;
+}
+.shopcar_main .shopmsg .remark {
+  padding: 1.5rem 1.5rem;
+  background: #fff;
+  margin-top: .1rem;
+  border-bottom: 1px solid #ececec;
+}
+.shopcar_main .shopmsg .remark input {
+  width: 66%;
+  padding-left: 1rem;
+  height: 3rem;
+  margin-left: 1rem;
+  border: 1px solid #cecece;
+  bottom: 3rem;
+  border-radius: .4rem;
+  outline: none;
+}
+.shopcar_main .shop_table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.shopcar_main .shop_table tr {
+  border-bottom: 1px solid #e0e0e0;
+  line-height: 4rem;
+  background: #fff;
+}
+.shopcar_main .shop_table tr .sele {
+  width: 5rem;
+  background-image: url("../../imgs/sele.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.8rem 1.8rem;
+}
+.shopcar_main .shop_table tr .sele_off {
+  background-image: url("../../imgs/seleout.png");
+  background-size: 1.8rem 1.8rem;
+}
+.shopcar_main .shop_table tr td:nth-of-type(2) {
+  width: 5rem;
+}
+.shopcar_main .shop_table tr td:nth-of-type(2) .table_pic {
+  height: 4rem;
+  background: url("../../imgs/shopTable1.png") no-repeat center;
+  background-size: 100%;
+}
+.shopcar_main .shop_table tr td:last-of-type {
+  position: relative;
+  padding-left: 1.1rem;
+}
+.shopcar_main .shop_table tr td:last-of-type > div {
+  overflow: hidden;
+}
+.shopcar_main .shop_table tr td:last-of-type .price {
+  float: left;
+}
+.shopcar_main .shop_table tr td:last-of-type .choose {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10rem;
+  height: 4rem;
+  text-align: center;
+}
+.shopcar_main .shop_table tr td:last-of-type .choose .add,
+.shopcar_main .shop_table tr td:last-of-type .choose .less {
+  display: block;
+  float: left;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  background: #ff4300 url(../../imgs/addicon.png) no-repeat right top;
+  background-size: 200% 100%;
+}
+.shopcar_main .shop_table tr td:last-of-type .choose .num {
+  float: left;
+  width: 2.6rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+}
+.shopcar_main .shop_table tr td:last-of-type .choose .less {
+  background-position: left top;
+}
+.shopcar_main .buy {
+  border-bottom: 1px solid #e0e0e0;
+  padding-left: 1.5rem;
+  background: #fff;
+  line-height: 5rem;
+  overflow: hidden;
+}
+.shopcar_main .buy .seleAll {
+  float: left;
+  padding-left: 2.3rem;
+  background: url("../../imgs/sele.png") no-repeat left center;
+  background-size: 1.8rem 1.8rem;
+}
+.shopcar_main .buy .sele_off {
+  background-image: url("../../imgs/seleout.png");
+  background-size: 1.8rem 1.8rem;
+}
+.shopcar_main .buy .ok,
+.shopcar_main .buy > span {
+  float: right;
+}
+.shopcar_main .buy span {
+  width: 40%;
+  text-align: center;
+}
+.shopcar_main .buy span b {
+  color: #e64f1a;
+  font-weight: 400;
+}
+.shopcar_main .buy .ok {
+  width: 10rem;
+  background-color: #ffd600;
+  text-align: center;
+}

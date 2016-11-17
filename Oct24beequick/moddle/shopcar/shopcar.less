@@ -1,0 +1,204 @@
+.shopcar_heander {
+    position: fixed;
+    top: 0;
+    height: 4.4rem;
+    width: 100%;
+    background: #F9FAFD;
+    font-size: 1.6rem;
+    line-height: 4.4rem;
+    text-align: center;
+    font-weight: 800;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.shopcar_main {
+    background: #e0e0e0;
+    margin-bottom: 7rem;
+    .location {
+        height: 4.4rem;
+        margin-top: 4.5rem;
+        line-height: 4.4rem;
+        color: #e64f1a;
+        font-size: 1.4rem;
+        text-align: center;
+        background: #fff;
+    }
+    .shopmsg {
+        .tip {
+            padding-left: 1.5rem;
+            background: #fff;
+            border-top: 1px solid #fff;
+            margin-top: 1rem;
+            padding-bottom: 1rem;
+            .short {
+                font-size: 1.4rem;
+                line-height: 1.4rem;
+                margin-top: 1rem;
+                em {
+                    display: inline-block;
+                    background: #ffd600;
+                    height: 1.4rem;
+                    width: .4rem;
+                    vertical-align: middle;
+                    margin-right: .5rem;
+                }
+            }
+            .tipin {
+                margin-top: 1.5rem;
+                color: #999;
+                font-size: 1rem;
+            }
+        }
+        // 收货时间
+        .time {
+            border: none;
+            margin-top: .1rem;
+            background: #fff;
+            padding: 2.5rem 1.5rem;
+            position: relative;
+            outline: none;
+            select {
+                border: none;
+                background: #fff;
+                color: red;
+            }
+            >.left {
+                float: left;
+            }
+            >.right {
+                float: right;
+            }
+            .middle {
+                height: 3rem;
+                position: absolute;
+                top: 1.4rem;
+                left: 30%;
+                outline: none;
+            }
+        }
+        .remark {
+            padding: 1.5rem 1.5rem;
+            background: #fff;
+            margin-top: .1rem;
+            border-bottom: 1px solid #ececec;
+            input {
+                width: 66%;
+                padding-left: 1rem;
+                height: 3rem;
+                margin-left: 1rem;
+                border: 1px solid #cecece;
+                bottom: 3rem;
+                border-radius: .4rem;
+                outline: none;
+            }
+        }
+    }
+    .shop_table {
+        table-layout: fixed;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        tr {
+            border-bottom: 1px solid #e0e0e0;
+            line-height: 4rem;
+            background: #fff;
+            // 黄色勾选按钮
+            .sele {
+                width: 5rem;
+                // background: url("../../imgs/sele.png") no-repeat center;
+                background-image: url("../../imgs/sele.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 1.8rem 1.8rem;
+            }
+            .sele_off {
+                // background: url("../../imgs/seleout.png") no-repeat center;
+                background-image: url("../../imgs/seleout.png");
+                background-size: 1.8rem 1.8rem;
+            }
+            td {
+                &:nth-of-type(2) {
+                    width: 5rem;
+                    .table_pic {
+                        height: 4rem;
+                        background: url("../../imgs/shopTable1.png") no-repeat center;
+                        background-size: 100%;
+                    }
+                }
+                &:last-of-type {
+                    position: relative;
+                    padding-left: 1.1rem;
+                    >div {
+                        overflow: hidden;
+                    }
+                    .price {
+                        float: left;
+                    }
+                    .choose {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 10rem;
+                        height: 4rem;
+                        text-align: center;
+                        .add,
+                        .less {
+                            display: block;
+                            float: left;
+                            width: 2.6rem;
+                            height: 2.6rem;
+                            border: 1px solid #e0e0e0;
+                            border-radius: 50%;
+                            background: #ff4300 url(../../imgs/addicon.png) no-repeat right top;
+                            background-size: 200% 100%;
+                        }
+                        .num {
+                            float: left;
+                            width: 2.6rem;
+                            height: 2.6rem;
+                            line-height: 2.6rem;
+                        }
+                        .less {
+                            background-position: left top;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .buy {
+        border-bottom: 1px solid #e0e0e0;
+        padding-left: 1.5rem;
+        background: #fff;
+        line-height: 5rem;
+        overflow: hidden;
+        // 全选按钮
+        .seleAll {
+            float: left;
+            padding-left: 2.3rem;
+            background: url("../../imgs/sele.png") no-repeat left center;
+            background-size: 1.8rem 1.8rem;
+        }
+        .sele_off {
+            background-image: url("../../imgs/seleout.png");
+            background-size: 1.8rem 1.8rem;
+        }
+        .ok,
+        >span {
+            float: right;
+        }
+        span {
+            width: 40%;
+            text-align: center;
+            b {
+                color: #e64f1a;
+                font-weight: 400;
+            }
+        }
+        .ok {
+            width: 10rem;
+            background-color: #ffd600;
+            text-align: center;
+        }
+    }
+}

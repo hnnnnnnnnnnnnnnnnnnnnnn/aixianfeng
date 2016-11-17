@@ -1,0 +1,196 @@
+body {
+    background: #efefef;
+}
+
+
+/*头部样式*/
+
+.home_header {
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 100%;
+    background: #ffd600;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    font-weight: 700;
+    font-size: 1.4rem;
+    >.addres {
+        text-align: center;
+        // float: left;
+        // padding:0 26%;
+        position: absolute;
+        left: 6rem;
+        right: 6rem;
+    }
+    > .header_left {
+        float: left;
+        padding-top: 1.3rem;
+        height: 1.3rem;
+        background: url("../../imgs/sweep.png") no-repeat center .7rem;
+    }
+    .header_right {
+        float: right;
+        padding-top: 1.3rem;
+        height: 1.3rem;
+        background: url(../../imgs/index_sc.png) no-repeat center .7rem;
+    }
+    > .header_left,
+    > .header_right {
+        width: 4rem;
+        background-size: 2rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+
+/*轮播下面的菜单*/
+
+.home_main {
+    margin-top: 4.5rem;
+    /*轮播图*/
+    .swiper-container {
+        width: 100%;
+        height: 10rem;
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        width: 40%;
+        left: auto;
+        right: 1rem;
+        bottom: .5rem;
+    }
+    .swiper-pagination span {
+        background: #fff;
+        opacity: 1;
+    }
+    .swiper-pagination .swiper-pagination-bullet-active {
+        background: #FED530;
+    }
+    .nav {
+        margin-top: 1rem;
+        overflow: hidden;
+        background: #fff;
+        border-bottom: 1px solid #e0e0e0;
+        /*padding-bottom: 1rem;*/
+    }
+    .nav a {
+        width: 25%;
+        float: left;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        background: no-repeat;
+        background-size: 6rem;
+        background-position: center top;
+    }
+    .theme-spline {
+        border: none;
+        border-color: #e0e0e0;
+        border-top-width: 1px;
+        border-top-style: solid;
+    }
+    .theme-spline > .theme-grayfont {
+        color: #999;
+        font-size: 1.4rem;
+        padding: .5rem;
+        text-align: center;
+    }
+    .hot {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .hot {
+        background: #e0e0e0;
+    }
+    .hot li {
+        position: relative;
+        width: 44%;
+        background: #fff;
+        padding: .6rem;
+        margin-bottom: .6rem;
+    }
+    .hot li > .hotshop {
+        padding-bottom: 100%;
+        background-size: 100%;
+    }
+    .hot li .shoptype {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+    .hot li .shoptype .good,
+    .pm_desc {
+        padding: .1rem .3rem;
+        border: 1px solid red;
+        color: red;
+        border-radius: .4rem;
+        line-height: 2rem;
+    }
+    .hot li .shoptype .pm_desc {
+        color: #fff;
+        background: red;
+        margin-left: .3rem;
+    }
+    .hot li .specifics {
+        color: #999;
+        line-height: 2rem;
+    }
+    .hot li .price {
+        color: #ff3800;
+    }
+    .hot li .market_price {
+        text-decoration: line-through;
+        color: #999;
+        margin-left: .3rem;
+    }
+    .choose {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding-right: 1rem;
+        width: 9rem;
+        height: 4rem;
+        text-align: center;
+    }
+    .choose .add,
+    .choose .less {
+        // display: block;
+        // float: left;
+        margin-top: .7rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        border: 1px solid #e0e0e0;
+        border-radius: 50%;
+        background: #ff4300 url(../../imgs/addicon.png) no-repeat right top;
+        background-size: 200% 100%;
+    }
+    .choose .num {
+        // float: left;
+        display: none;
+        margin-top: .7rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        line-height: 2.6rem;
+    }
+    .choose .less {
+        display: none;
+        background-position: left top;
+    }
+}
+.moreGoods {
+    display:block;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+    color: #999;
+}

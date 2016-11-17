@@ -1,0 +1,189 @@
+/*闪送超市*/
+/*头部样式*/
+.markeet_header {
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 100%;
+  padding: 0 .8rem;
+  background: #ffd600;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.markeet_header > .addres {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  float: left;
+}
+.markeet_header > .header_left,
+.markeet_header > .header_right {
+  width: 22%;
+}
+.markeet_header > .header_left {
+  float: left;
+  height: 4.5rem;
+}
+.markeet_header > .header_right {
+  float: left;
+  text-align: right;
+  padding-top: 1.3rem;
+  height: 1.3rem;
+  background: url(../../imgs/index_sc.png) no-repeat right 0.7rem;
+  background-size: 2rem;
+}
+.markeet_main {
+  color: #777;
+  background: #fff;
+}
+.markeet_main .mian_left {
+  width: 24%;
+  overflow: hidden;
+}
+.markeet_main .mian_left nav {
+  overflow-y: auto;
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 4.5rem;
+  bottom: 5rem;
+  width: 24%;
+}
+.markeet_main .mian_left nav .nav li {
+  border-bottom: 1px solid #e0e0e0;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+  box-sizing: border-box;
+  line-height: 4rem;
+  text-align: center;
+  color: #6d6d6d;
+}
+.markeet_main .mian_left nav .nav li:first-of-type {
+  border-left: .4rem solid #ffd600;
+}
+.markeet_main .sork {
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin-left: .3rem;
+  position: fixed;
+  left: 24%;
+  top: 4.5rem;
+  width: 75%;
+  border-bottom: 1px solid #e0e0e0;
+}
+.markeet_main .sork p {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 2rem;
+  margin-top: 1rem;
+  box-sizing: border-box;
+}
+.markeet_main .sork p:first-of-type {
+  border-right: 1px solid #e0e0e0;
+}
+.markeet_main .main_right {
+  position: absolute;
+  width: 75%;
+  top: 8.6rem;
+  left: 24%;
+  bottom: 5rem;
+  overflow-y: auto;
+}
+.markeet_main .main_right > li {
+  padding: 1.5rem 0 0 0;
+  overflow: hidden;
+  border-bottom: 1px solid #e0e0e0;
+  margin-left: .1rem;
+  background-color: #fff;
+}
+.markeet_main .main_right > li * {
+  float: left;
+  padding: .3rem 0;
+}
+.markeet_main .main_right > li .shop_msg {
+  position: relative;
+  float: left;
+  width: 55%;
+  height: 8rem;
+  padding-top: .5rem;
+  line-height: 1rem;
+}
+.markeet_main .main_right > li .img {
+  width: 45%;
+  float: left;
+  padding-bottom: 8rem;
+  background: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+.markeet_main .main_right > li .name {
+  float: left;
+  color: #232b33;
+  width: 100%;
+  line-height: 1.6rem;
+}
+.markeet_main .main_right > li .good,
+.markeet_main .main_right > li .pm_desc {
+  padding: 0rem .3rem;
+  border: 1px solid red;
+  color: red;
+  border-radius: .4rem;
+  height: 1.2rem;
+  line-height: 1.4rem;
+}
+.markeet_main .main_right > li .pm_desc {
+  color: #fff;
+  background: red;
+  margin-left: .3rem;
+}
+.markeet_main .main_right > li .shoptype {
+  height: 2rem;
+}
+.markeet_main .main_right > li .price {
+  color: #ff3800;
+}
+.markeet_main .main_right > li .market_price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: .3rem;
+}
+.markeet_main .main_right > li .specifics {
+  clear: both;
+}
+.markeet_main .main_right > li .choose {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 1rem 0 0;
+  width: 9rem;
+  height: 4rem;
+  text-align: center;
+  line-height: 1rem;
+}
+.markeet_main .main_right > li .choose .add,
+.markeet_main .main_right > li .choose .less {
+  margin-top: .7rem;
+  padding: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  background: #ff4300 url(../../imgs/addicon.png) no-repeat right top;
+  background-size: 200% 100%;
+}
+.markeet_main .main_right > li .choose .num {
+  display: none;
+  margin-top: .7rem;
+  padding: 0;
+  width: 2rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+}
+.markeet_main .main_right > li .choose .less {
+  display: none;
+  background-position: left top;
+}

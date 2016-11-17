@@ -1,0 +1,163 @@
+/*积分商城*/
+body {
+  height: 100%;
+}
+.score_header {
+  height: 4.4rem;
+  line-height: 4.4rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 1rem 0 .8rem;
+  background: #fff;
+  margin-bottom: .1rem;
+}
+.score_header .header_tital {
+  width: 50%;
+  text-align: center;
+  font-size: 1.6rem;
+  float: left;
+}
+.score_header .header_left {
+  background: url(../../imgs/h_left.png) no-repeat;
+  background-position: left center;
+}
+.score_header .header_left,
+.score_header .header_right {
+  width: 25%;
+  height: 4.4rem;
+  float: left;
+  background-size: 3rem;
+}
+.score_main {
+  background: #e0e0e0;
+}
+.score_main .scoren {
+  background: #fff;
+  color: #999;
+}
+.score_main .scoren .scoren_num {
+  height: 12rem;
+  padding: 1rem 0;
+  border-bottom: .1rem solid #e0e0e0;
+}
+.score_main .scoren .scoren_num .wrap {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem auto;
+  text-align: center;
+  line-height: 10rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.score_main .scoren .scoren_num .box {
+  position: absolute;
+  width: 5rem;
+  height: 10rem;
+  top: 0;
+  overflow: hidden;
+}
+.score_main .scoren .scoren_num .left {
+  left: 0;
+}
+.score_main .scoren .scoren_num .right {
+  right: 0;
+}
+.score_main .scoren .scoren_num .circle {
+  width: 8rem;
+  height: 8rem;
+  border: 1rem solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+.score_main .scoren .scoren_num .rightCircle {
+  right: 0;
+  border-top-color: red;
+  border-right-color: red;
+  /*transform: rotate(45deg);*/
+  animation: rightRot 3s linear 1 forwards;
+}
+.score_main .scoren .scoren_num .leftCircle {
+  border-bottom-color: red;
+  border-left-color: red;
+  /*transform: rotate(-135deg);*/
+  animation: leftRot 3s linear 1 forwards;
+}
+@keyframes leftRot {
+  0%,
+  50% {
+    -webkit-transform: rotate(-135deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+@keyframes rightRot {
+  0% {
+    -webkit-transform: rotate(-135deg);
+  }
+  50%,
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+.score_main .scoren nav {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.score_main .scoren nav p {
+  float: left;
+  width: 33.3%;
+  padding: 4.4rem 0 1rem 0;
+  border-right: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  background: no-repeat center 1rem;
+  background-size: 2.4rem;
+  text-align: center;
+}
+.score_main .scoren nav p:first-of-type {
+  background-image: url(../../imgs/srore1.png);
+}
+.score_main .scoren nav p:nth-of-type(2) {
+  background-image: url(../../imgs/srore2.png);
+}
+.score_main .scoren nav p:nth-of-type(3) {
+  background-image: url(../../imgs/srore3.png);
+  border-right: none;
+}
+.score_main .ticket {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.score_main .ticket li {
+  float: left;
+  background: #ffffff no-repeat center 1rem;
+  background-size: 100%;
+  padding-top: 30%;
+  width: 50%;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+.score_main .ticket li:nth-of-type(2n) {
+  border-right: none;
+}
+.score_main .ticket li p {
+  margin-left: 1rem;
+  line-height: 2rem;
+}
+.score_main .ticket li p:last-of-type {
+  color: #e64f1a;
+}
+.score_main .ticket li:first-of-type {
+  background-image: url("../../imgs/ticket1.png");
+}
+.score_main .ticket li:nth-of-type(2) {
+  background-image: url("../../imgs/ticket2.png");
+}
+.score_main .ticket li:nth-of-type(3) {
+  background-image: url("../../imgs/ticket3.png");
+}
+.score_main .ticket li:nth-of-type(4) {
+  background-image: url("../../imgs/ticket4.png");
+}

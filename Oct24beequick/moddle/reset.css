@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #353d44;
+}
+html{
+    font-size: 10px;
+    color: #333;
+    background: #EFEFEF;
+    font:10px/10px '微软雅黑',Helvetica,Tahoma,Arial,'华文细黑',sans-serif
+}
+body {
+    background: #EFEFEF;
+    font: 10px/1.5 "Myriad Set Pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif,'Microsoft Yahei',Simsun;
+}

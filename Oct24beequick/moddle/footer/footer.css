@@ -1,0 +1,98 @@
+footer {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(246, 246, 246, .85);
+}
+
+footer ul {
+    height: 5rem;
+    color: #777;
+    /*padding:0 1.5rem;*/
+}
+
+footer ul li {
+    width: 20%;
+    text-align: center;
+    float: left;
+    padding-top: 3.3rem;
+    background: no-repeat center .8rem;
+    background-size: auto 2rem;
+}
+
+.move {
+    animation: jump 1s ease-in-out;
+}
+
+@keyframes jump {
+    0% {
+        background-size: auto 1.5rem;
+    }
+    20% {
+        background-size: auto 2rem;
+    }
+    40% {
+        background-size: auto 2.2rem;
+    }
+    60% {
+        background-size: auto 2.3rem;
+    }
+    80% {
+        background-size: auto 2.2rem;
+    }
+    100% {
+        background-size: auto 2rem;
+    }
+}
+ul .footer_home{
+    background-image: url(../../imgs/footer1.png);
+}
+ul .footer_home.sele_fo{
+    background-image:url(../../imgs/footer11.png);
+}
+ul .footer_mark {
+    background-image: url(../../imgs/footer2.png);
+}
+ul .footer_mark.sele_fo {
+    background-image: url(../../imgs/footer12.png);
+}
+
+ul .footer_resh {
+    background-image: url(../../imgs/footer3.png)
+}
+ul .footer_resh.sele_fo {
+    background-image: url(../../imgs/footer13.png)
+}
+
+ul .footer_shop {
+    position: relative;
+    background-image: url(../../imgs/footer4.png);
+}
+ul .footer_shop.sele_fo {
+    position: relative;
+    background-image: url(../../imgs/footer14.png);
+}
+
+footer .num_shopcar {
+    display: none;
+    position: absolute;
+    top: 0.5rem;
+    right: -.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #f40;
+    text-align: center;
+    transition: all .5s;
+}
+
+ul .footer_my {
+    background-image: url(../../imgs/footer5.png)
+}
+ul .footer_my.sele_fo{
+    background-image: url(../../imgs/footer15.png)
+}

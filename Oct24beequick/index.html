@@ -1,0 +1,32 @@
+<!-- <?php
+require_once "jssdk.php";
+$jssdk = new jssdk("wxdec452e86d2dae5e", "826c040145dbf7c8e8ac47e7dda120f9");
+$signPackage = $jssdk->GetSignPackage();
+?>
+ --><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title>首页</title>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript">
+		wx.config({
+		    debug: false,
+		    appId: '<?php echo $signPackage["appId"]; ?>',
+		    timestamp: '<?php echo $signPackage["timestamp"]; ?>',
+		    nonceStr: '<?php echo $signPackage["nonceStr"]; ?>',
+		    signature: '<?php echo $signPackage["signature"]; ?>',
+		    jsApiList: ["getLocation","scanQRCode"]
+		});
+		wx.ready(function(){
+
+		})
+	</script>
+	<script type="text/javascript" src="lib/require.js" data-main="main.js"></script>
+</head>
+<body>
+	<div class="container"></div>
+	<footer></footer>
+</body>
+</html>

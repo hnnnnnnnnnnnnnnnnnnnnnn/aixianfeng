@@ -1,0 +1,67 @@
+body {
+	height: 100%;	
+    color:#333;
+}
+//头部
+.myIndent_header{
+	height:4.4rem;
+	line-height: 4.4rem;
+	border-bottom: 1px solid #e0e0e0;
+	padding:0 1rem 0 .8rem;
+	background:#fff;
+	margin-bottom: .1rem;
+	.header_tital{
+		width: 50%;
+		text-align: center;
+		font-size: 1.6rem;
+		float: left;
+	}
+	.header_left{
+		background:url(../../imgs/h_left.png) no-repeat;
+		background-position: left center;
+	}
+	.header_right{
+		background:url(../../imgs/h_reset.png) no-repeat;
+		background-position: right center;
+	}
+	.header_left,.header_right{
+		width: 25%;
+		height: 4.4rem;
+		float: left;
+		background-size: 3rem;
+	}
+}
+.myIndent_main{
+	nav{
+		.nav{
+			display: flex;
+			justify-content:space-around;
+			background:#fff;
+			padding:0 .3rem;
+			border-bottom: .1rem solid #e0e0e0;
+			li{
+				position: relative;
+				flex:1;
+				text-align:center;
+				height: 4.2rem;
+				line-height: 4.2rem;
+				// &:first-of-type{
+				// 	border-bottom: .2rem solid #ff3800;
+				// }
+			}
+			// 默认第一个样式
+			.nav_li_sele{
+				color:#ff3800;
+				&:after{
+					content:"";
+					position: absolute;
+					bottom: 0;
+					left: 10%;
+					width:80%;
+					height: .17rem;
+					background-color:#ff3800;
+				}
+			}	
+		}
+	}
+}

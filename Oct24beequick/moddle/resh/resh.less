@@ -1,0 +1,104 @@
+// body {
+//     background: #EFEFEF;
+// }
+// 新鲜预定
+.resh_header {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 800;
+    height: 3rem;
+    width: 100%;
+    line-height: 3rem;
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: .5rem 0;
+}
+
+.resh_main {
+    margin-bottom: 5rem;
+    nav {
+        p {
+            margin-bottom: .2rem;
+            overflow: hidden;
+            background: #fff;
+            line-height: 2.5rem;
+            box-sizing: border-box;
+            >a {
+                float: left;
+                width: 20%;
+                text-align: center;
+                font-size: 1.4rem;
+                box-sizing: border-box;
+                border-bottom: 1px solid #fff;
+                color: #666;
+                padding: .5rem 0;
+            }
+        }
+    }
+    .pruduct {
+        .title {
+            height: 3rem;
+            line-height: 3rem;
+            padding-left: 2rem;
+            background: #fff;
+            margin-bottom: 1rem;
+            p {
+                background: blue;
+                height: 1.5rem;
+                //vertical-align:middle;
+                margin-top: .75rem;
+                width: .5rem;
+                display: inline-block;
+            }
+            h4 {
+                color: #666;
+                font-size: 1.5rem;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+        .prolist {
+            >li {
+                position: relative;
+                height: 7rem;
+                padding-top: 2rem;
+                background: no-repeat;
+                background-size: 9rem 9rem;
+                background-position: 1rem top;
+                padding-left: 45%;
+                //这个属性要在家最后才生效
+                background-color: #fff;
+                margin-bottom: .2rem;
+                .promsg {
+                    color: #666;
+                    //width: 50%;
+                    padding-right: 2rem;
+                    .proname {
+                        font-size: 1.4rem;
+                        //width:;
+                        line-height: 1.4rem;
+                    }
+                    .proprice {
+                        font-size: 1.8rem;
+                        color: red;
+                        font-weight: 800;
+                        margin-top: 2rem;
+                    }
+                    &:after{
+                        content: "";
+                        position:absolute;
+                        right: 1rem;
+                        z-index:2;
+                        bottom: 1.3rem;
+                        width: 4rem;
+                        height: 4rem;
+                        border-radius: 50%;
+                        background:url(../../imgs/car.jpg) no-repeat;
+                        background-position:center;
+                        background-size:3rem;
+                    }
+                }
+            }
+        }
+    }
+}

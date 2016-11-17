@@ -1,0 +1,215 @@
+
+// body {
+//     background: #efefef;
+//     line-height: 1rem;
+// }
+
+/*闪送超市*/
+/*头部样式*/
+
+.markeet_header {
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 100%;
+    padding: 0 .8rem;
+    background: #ffd600;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    font-weight: 700;
+    font-size: 1.4rem;
+    >.addres {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        float: left;
+    }
+
+    > .header_left,
+    > .header_right {
+        width: 22%;
+    }
+
+    > .header_left {
+        float: left;
+        height: 4.5rem;
+    }
+
+    > .header_right {
+        float: left;
+        text-align: right;
+        padding-top: 1.3rem;
+        height: 1.3rem;
+        background: url(../../imgs/index_sc.png) no-repeat right .7rem;
+        background-size: 2rem;
+    }
+}
+
+
+.markeet_main {
+    color: #777;
+    background: #fff;
+    .mian_left {
+        // margin-top: 4.5rem;
+        // margin-bottom: 5rem;
+        width: 24%;
+        overflow: hidden;
+        nav {
+            overflow-y: auto;
+            background-color: #f8f8f8;
+            position: absolute;
+            top: 4.5rem;
+            bottom: 5rem;
+            width: 24%;
+            .nav {
+                li {
+                    border-bottom: 1px solid #e0e0e0;
+                    padding-top: .1rem;
+                    padding-bottom: .1rem;
+                    box-sizing: border-box;
+                    line-height: 4rem;
+                    text-align: center;
+                    color: #6d6d6d;
+                    &:first-of-type {
+                        border-left: .4rem solid #ffd600;
+                    }
+                }
+            }
+        }
+    }
+    .sork {
+        height: 4rem;
+        //line-height: 4rem;
+        background-color: rgba(255, 255, 255, .95);
+        margin-left: .3rem;
+        position: fixed;
+        left: 24%;
+        top: 4.5rem;
+        width: 75%;
+        border-bottom: 1px solid #e0e0e0;
+        p {
+            float: left;
+            width: 50%;
+            text-align: center;
+            line-height: 2rem;
+            margin-top: 1rem;
+            box-sizing: border-box;
+            &:first-of-type {
+                border-right: 1px solid #e0e0e0;
+            }
+        }
+    }
+    // 右边的商品列表
+    .main_right {
+        position: absolute;
+        width: 75%;
+        top: 8.6rem;
+        left: 24%;
+        bottom: 5rem;
+        overflow-y: auto;
+        >li {
+            padding: 1.5rem 0 0 0;
+            overflow: hidden;
+            border-bottom: 1px solid #e0e0e0;
+            margin-left: .1rem;
+            background-color: #fff;
+            * {
+                float: left;
+                padding: .3rem 0;
+            }
+            .shop_msg {
+                position: relative;
+                float: left;
+                width: 55%;
+                height: 8rem;
+                padding-top: .5rem;
+                line-height: 1rem;
+            }
+            .img {
+                width: 45%;
+                float: left;
+                padding-bottom: 8rem;
+                background: no-repeat;
+                background-size: 90%;
+                background-position: center;
+            }
+            // 商品名
+            .name {
+                float: left;
+                color: #232b33;
+                width: 100%;
+                line-height: 1.6rem;
+            }
+            // 精选
+            .good,
+            .pm_desc {
+                padding: 0rem .3rem;
+                border: 1px solid red;
+                color: red;
+                border-radius: .4rem;
+                height: 1.2rem;
+                line-height: 1.4rem;
+            }
+            // 买一赠一
+            .pm_desc {
+                color: #fff;
+                background: red;
+                margin-left: .3rem;
+            }
+            .shoptype {
+                height: 2rem;
+            }
+            // 价格
+            .price {
+                color: #ff3800;
+            }
+            .market_price {
+                text-decoration: line-through;
+                color: #999;
+                margin-left: .3rem;
+            }
+            // 质量
+            .specifics {
+                clear: both;
+            }
+            .choose {
+                display: flex;
+                justify-content: flex-end;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 0 1rem 0 0;
+                width: 9rem;
+                height: 4rem;
+                text-align: center;
+                line-height: 1rem;
+            }
+            .choose .add,
+            .choose .less {
+                // display: block;
+                // float: left;
+                margin-top: .7rem;
+                padding:0;
+                width: 2.6rem;
+                height: 2.6rem;
+                border: 1px solid #e0e0e0;
+                border-radius: 50%;
+                background: #ff4300 url(../../imgs/addicon.png) no-repeat right top;
+                background-size: 200% 100%;
+            }
+            .choose .num {
+                // float: left;
+                display: none;
+                margin-top: .7rem;
+                padding:0;
+                width: 2rem;
+                height: 2.6rem;
+                line-height: 2.6rem;
+            }
+            .choose .less {
+                display: none;
+                background-position: left top;
+            }
+        }
+    }
+}

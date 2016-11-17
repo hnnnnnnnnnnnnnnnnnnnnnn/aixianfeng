@@ -1,0 +1,207 @@
+.my_header {
+    position: fixed;
+    top: 0;
+    background-color: #ffd600;
+    width: 100%;
+    .header_msg {
+        position: relative;
+        height: 8rem;
+        width: 100%;
+        background: url("../../imgs/head.png") no-repeat;
+        background-position: 1.5rem 2rem;
+        background-size: auto 6rem;
+        padding-left: 9rem;
+        padding-top: 2rem;
+        font-size: 1.5rem;
+        color: #fff;
+        p {
+            margin-top: .8rem;
+            // 电话号码
+            &:first-of-type {
+                font-weight: 700;
+                line-height: 1rem;
+                margin-left: .2rem;
+            }
+        }
+        // 注册会员
+        .type {
+            background: url("../../imgs/bee.png") no-repeat;
+            background-position: left center;
+            line-height: 2.8rem;
+            color: #e64f1a;
+            background-size: auto 100%;
+            padding-left: 2.9rem;
+            font-size: 1rem;
+        }
+    }
+    .right {
+        background: url(../../imgs/rigth.png);
+        position: absolute;
+        width: 1.1em;
+        height: 1.9em;
+        top: 4rem;
+        right: 2rem;
+        z-index: 3;
+        background-size: 100%;
+    }
+    .heafer_collect {
+        background: #f3c800;
+        height: 3.5rem;
+        // line-height: 3.5rem;
+        width: 100%;
+        color: #fff;
+        >* {
+            width: 49%;
+            float: left;
+            // text-align:center;
+        }
+        p {
+            width: .1rem;
+            height: 70%;
+            background: #fff;
+            margin-top: .5rem;
+            ;
+        }
+        span{
+            &:first-of-type{
+                background:url(../../imgs/collecrl.png) no-repeat;
+            }
+            &:last-of-type{
+                background: url(../../imgs/collectr.png) no-repeat;
+            }
+        }
+        .collect_left,
+        .collect_right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3.5rem;
+            span{
+                padding-left: 3rem;
+                line-height: 2rem;
+                background-size: auto 1.8rem;
+            }
+        }
+    }
+}
+
+
+/*内容部分*/
+
+.my_main {
+    background-color: #efefef;
+    height: 100%;
+    margin-bottom: 5rem;
+    .mian_top {
+        margin-top: 14rem;
+        /*我的订单*/
+        .indent {
+            background: #fff url("../../imgs/right2.png") no-repeat;
+            background-position: right 50%;
+            background-size: 2rem;
+            overflow: hidden;
+            margin-top: 1rem;
+            a,
+            span {
+                float: left;
+                font-size: 1.4rem;
+                padding: 1.6rem;
+                padding-right: 3rem;
+            }
+            span {
+                float: right;
+                color: #999;
+            }
+        }
+        /*代付款*/
+        .pay {
+            background: #fff;
+            margin-top: .1rem;
+            padding: 1rem 0;
+            overflow: hidden;
+            li {
+                float: left;
+                //padding:0 1.6rem;
+                width: 25%;
+                text-align: center;
+                padding-top: 4rem;
+                &:first-of-type {
+                    background: url(../../imgs/mymain1.png) no-repeat;
+                    background-size: 2rem;
+                    background-position: center;
+                }
+                &:nth-of-type(2) {
+                    background: url(../../imgs/mymain2.png) no-repeat;
+                    background-size: 2rem;
+                    background-position: center;
+                }
+                &:nth-of-type(3) {
+                    background: url(../../imgs/mymain3.png) no-repeat;
+                    background-size: 2rem;
+                    background-position: center;
+                }
+                &:nth-of-type(4) {
+                    background: url(../../imgs/mymain4.png) no-repeat;
+                    background-size: 2rem;
+                    background-position: center;
+                }
+            }
+        }
+    }
+    //积分商城
+    .main_middle {
+        margin-bottom: 2rem;
+        .integral {
+            background: #fff;
+            overflow: hidden;
+            margin-top: 1rem;
+            li {
+                float: left;
+                //padding:5.5rem 1.4rem 1.5rem;
+                padding: 5.5rem 0 1.5rem 0;
+                text-align: center;
+                width: 25%;
+                border-bottom: 1px solid #efefef;
+                &:nth-of-type(1) {
+                    background: url("../../imgs/integral1.png") no-repeat center;
+                    background-size: 3rem;
+                }
+                &:nth-of-type(2) {
+                    background: url("../../imgs/integral2.png") no-repeat center;
+                    background-size: 3rem;
+                }
+                &:nth-of-type(3) {
+                    background: url("../../imgs/integral3.png") no-repeat center;
+                    background-size: 3rem;
+                }
+                &:nth-of-type(4) {
+                    background: url("../../imgs/integral4.png") no-repeat center;
+                    background-size: 3rem;
+                }
+                &:nth-of-type(5) {
+                    background: url("../../imgs/integral5.png") no-repeat center;
+                    background-size: 3rem;
+                    border: none;
+                }
+                &:nth-of-type(6) {
+                    background: url("../../imgs/integral5.png") no-repeat center;
+                    background-size: 3rem;
+                    border: none;
+                }
+            }
+        }
+    }
+    /*退出账号*/
+    .mian_bottom {
+        height: 4.5rem;
+        width: 100%;
+        text-align: center;
+        background: #fff;
+        line-height: 4.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.my_main + footer {
+    display: block;
+}
